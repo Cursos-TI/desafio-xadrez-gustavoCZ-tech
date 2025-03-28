@@ -6,28 +6,6 @@
 
 int main() {
 
-    char torre[]= "direita", bispo[] ="cima,Diretita", rainha[] ="esquerda";
-    int i;
-
-    printf("simulação de movimento de peças de chadez\n");
-
-    printf("torre : \n");
-    do{
-        printf("%s\n", torre);
-        i++;
-    }while(i <= 5);
-
-    printf("\nbispo :\n");
-    i = 1;
-    while(i <= 5){
-        printf("%s\n", bispo);
-        i++;
-    }
-
-    printf("\nrainha : \n");
-    for(i = 1;i <= 8; i++ ){
-        printf("%s\n", rainha);
-    }
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
@@ -39,6 +17,40 @@ int main() {
 
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+
+    char torre[]= "direita", bispo1[] = "cima", bispo2[] = "Direita", rainha[] = "esquerda", cavalo1[] = "baixo", cavalo2[] = "esquerda";
+    int i, j;
+
+    printf("simulação de movimento de peças de chadez\n");
+
+    i = 1;
+    printf("torre : \n");
+    do{
+        printf("%s\n", torre);
+        i++;
+    }while(i <= 5);
+
+    printf("\nbispo :\n");
+    i = 1;
+    while(i <= 5){
+        printf("%s, %s\n", bispo1,bispo2);
+        i++;
+    }
+
+    printf("\nrainha : \n");
+    for(i = 1;i <= 8; i++ ){
+        printf("%s\n", rainha);
+    }
+
+    printf("\ncavalo :\n");
+    for(i = 1; i <= 1; i++){
+        printf("%s\n",cavalo1);
+        j = 1;
+        while(j <= 2){
+            printf("%s\n", cavalo2);
+            j++;
+        }
+    }
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
